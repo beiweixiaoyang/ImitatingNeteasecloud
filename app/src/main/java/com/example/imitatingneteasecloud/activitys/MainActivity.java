@@ -1,10 +1,14 @@
-package com.example.imitatingneteasecloud;
+package com.example.imitatingneteasecloud.activitys;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.imitatingneteasecloud.R;
+
+/**
+ * APP主界面
+ */
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
