@@ -24,6 +24,9 @@ public class BaseActivity extends Activity {
         iv_person=findViewById(R.id.iv_person);
         iv_back=findViewById(R.id.iv_back);
         tv_title=findViewById(R.id.tv_title);
+        iv_back.setVisibility(isShowBack?View.VISIBLE:View.INVISIBLE);
+        iv_person.setVisibility(isShowPerson?View.VISIBLE:View.INVISIBLE);
+        tv_title.setText(title);
 
         //返回按钮的点击事件
         iv_back.setOnClickListener(new View.OnClickListener() {

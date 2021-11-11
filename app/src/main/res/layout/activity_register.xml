@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.LoginActivity">
+    tools:context=".activitys.RegisterActivity">
 
     <include layout="@layout/nav_bar"/>
 
@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"/>
 
     <com.example.imitatingneteasecloud.views.InputView
+        android:id="@+id/register_phone"
         app:input_password="false"
         app:input_hint="请输入手机号"
         app:input_icon="@mipmap/phone"
@@ -26,6 +27,7 @@
     <View
         style="@style/split_line"/>
     <com.example.imitatingneteasecloud.views.InputView
+        android:id="@+id/register_password"
         app:input_icon="@mipmap/password"
         app:input_hint="请输入密码"
         app:input_password="true"
@@ -34,22 +36,22 @@
         android:layout_height="@dimen/inputView_height"/>
     <View
         style="@style/split_line"/>
-
-    <TextView
-        android:id="@+id/tv_register"
-        android:layout_gravity="center_horizontal"
+    <com.example.imitatingneteasecloud.views.InputView
+        android:id="@+id/register_password_confirm"
+        app:input_icon="@mipmap/password"
+        app:input_hint="请确认密码"
+        app:input_password="true"
         android:layout_marginTop="@dimen/margin_size"
-        android:text="立即注册"
-        android:textSize="@dimen/small_text_Size"
-        android:textColor="@color/main_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onRegisterClick"/>
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputView_height"/>
+    <View
+        style="@style/split_line"/>
+
 
     <Button
         style="@style/click_button"
-        android:text="登  录"
-        android:onClick="onLoginClick"/>
+        android:text="注   册"
+        android:onClick="onRegisterClick"/>
 
 
 </LinearLayout>

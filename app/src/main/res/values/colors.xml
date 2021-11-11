@@ -11,4 +11,5 @@
     <color name="main_color_click">#c80f1f</color>
     <color name="item_color_click">#DEE1E6</color>
     <color name="small_text_color">#888888</color>
+    <color name="split_line_color">#c3c3c3</color>
 </resources>

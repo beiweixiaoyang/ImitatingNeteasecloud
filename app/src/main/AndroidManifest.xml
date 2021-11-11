@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ImitatingNeteaseCloud">
         <activity
+            android:name=".activitys.RegisterActivity"
+            android:exported="true" />
+        <activity
             android:name=".activitys.LoginActivity"
             android:exported="false" />
         <activity
@@ -23,7 +26,7 @@
         </activity>
         <activity
             android:name=".activitys.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

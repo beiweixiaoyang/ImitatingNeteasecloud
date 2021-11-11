@@ -2,6 +2,7 @@ package com.example.imitatingneteasecloud.activitys;
 
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.imitatingneteasecloud.R;
 
@@ -17,5 +18,14 @@ public class LoginActivity extends BaseActivity {
     //初始化View
     private void initView() {
         initNavBar(false,"登录",false);
+    }
+
+    /**
+     * 登录按钮的点击事件
+     */
+    public void onLoginClick(View view) {
+    }
+
+    public void onRegisterClick(View view) {
     }
 }

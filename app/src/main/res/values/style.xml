@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    定义分割线的样式-->
+    <style name="split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/split_line_color</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size</item>
+        <item name="android:layout_marginRight">@dimen/margin_size</item>
+    </style>
+
+<!--    定义点击按钮的样式-->
+    <style name="click_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/click_button_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_size</item>
+        <item name="android:layout_marginRight">@dimen/margin_size</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size</item>
+        <item name="android:background">@drawable/commit_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
