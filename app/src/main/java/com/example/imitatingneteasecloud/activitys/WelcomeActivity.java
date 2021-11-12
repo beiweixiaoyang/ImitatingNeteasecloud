@@ -23,7 +23,7 @@ public class WelcomeActivity extends BaseActivity {
         mTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                toLoginActivity();
+                toMainActivity();
             }
         },3000);
     }

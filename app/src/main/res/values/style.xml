@@ -13,7 +13,7 @@
 <!--    定义点击按钮的样式-->
     <style name="click_button">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/click_button_height</item>
+        <item name="android:layout_height">@dimen/click_item_height</item>
         <item name="android:layout_marginTop">@dimen/margin_size</item>
         <item name="android:layout_marginRight">@dimen/margin_size</item>
         <item name="android:layout_marginLeft">@dimen/margin_size</item>

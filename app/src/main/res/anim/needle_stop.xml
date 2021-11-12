@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--停止播放音乐时指针转动的动画-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:fillAfter="true">
+
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="-20"
+        android:pivotX="0"
+        android:pivotY="0"/>
+</set>

@@ -7,5 +7,5 @@
     <item android:state_checked="true" android:drawable="@drawable/buttonclicked"/>
 
 <!--    默认状态下的button-->
-    <item android:drawable="@drawable/button"/>
+    <item android:drawable="@drawable/buttondefault"/>
 </selector>

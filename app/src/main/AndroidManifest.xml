@@ -2,19 +2,36 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.imitatingneteasecloud">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".application.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImitatingNeteaseCloud">
+        <service
+            android:name=".services.MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".activitys.PlayMusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.PersonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.AlbumListActivity"
+            android:exported="false" />
         <activity
             android:name=".activitys.RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".activitys.LoginActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activitys.WelcomeActivity"
             android:exported="true">
