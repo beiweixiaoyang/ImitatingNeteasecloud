@@ -3,27 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/drawable/textview.xml" value="0.3453703703703704" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/drawable/textviewclicked.xml" value="0.3453703703703704" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/drawable/textviewdefault.xml" value="0.3453703703703704" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_album_list.xml" value="0.25" />
         <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_login.xml" value="0.17806484295845998" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_person.xml" value="0.3515625" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_play_music.xml" value="0.25" />
+        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_main.xml" value="0.17806484295845998" />
         <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/activity_welcome.xml" value="0.3515625" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/grid_item.xml" value="0.25" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/list_item.xml" value="0.33" />
         <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/nav_bar.xml" value="0.33" />
-        <entry key="..\:/Android/ImitatingNeteasecloud/app/src/main/res/layout/playmusicview.xml" value="0.25" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/drawable/button.xml" value="0.3398148148148148" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/drawable/buttonclickde.xml" value="0.3398148148148148" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/drawable/click_button.xml" value="0.3398148148148148" />
+        <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_change_password.xml" value="0.33" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_person.xml" value="0.36614583333333334" />
+        <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_play_music.xml" value="0.36614583333333334" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/activity_register.xml" value="0.36614583333333334" />
+        <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/grid_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/inputview.xml" value="0.33" />
         <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/nav_bar.xml" value="0.36614583333333334" />
+        <entry key="..\:/Pcakages/Android/Project/ImitatingNeteasecloud/app/src/main/res/layout/playmusicview.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

@@ -12,20 +12,26 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.imitatingneteasecloud.R;
 import com.example.imitatingneteasecloud.activitys.PlayMusicActivity;
+import com.example.imitatingneteasecloud.models.MusicModel;
+
+import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     private Context mContext;
     private boolean isFirstCalculate;//是否第一次计算recyclerView的高度
 
+    private List<MusicModel> musicModels;
     private View mItemView;//
     private RecyclerView mRecyclerView;
 
-    public ListAdapter(Context mContext,RecyclerView recyclerView) {
+    public ListAdapter(Context mContext,RecyclerView recyclerView,List<MusicModel>list) {
         this.mContext = mContext;
         this.mRecyclerView=recyclerView;
+        this.musicModels=list;
     }
 
     @NonNull
@@ -37,18 +43,25 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        MusicModel musicModel=musicModels.get(position);
         setRecyclerViewHeight();
+        Glide.with(mContext)
+                .load(musicModel.getPoster())
+                .into(holder.iv_icon);
+        holder.tv_author.setText(musicModel.getAuthor());
+        holder.tv_name.setText(musicModel.getName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mContext.startActivity(new Intent(mContext, PlayMusicActivity.class));
+                mContext.startActivity(new Intent(mContext, PlayMusicActivity.class)
+                .putExtra(PlayMusicActivity.MUSIC_ID,musicModel.getMusicId()));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return 8;
+        return musicModels.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{

@@ -18,6 +18,9 @@
             android:exported="true"></service>
 
         <activity
+            android:name=".activitys.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".activitys.PlayMusicActivity"
             android:exported="false" />
         <activity

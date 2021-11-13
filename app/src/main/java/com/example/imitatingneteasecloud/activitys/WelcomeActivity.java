@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.imitatingneteasecloud.R;
+import com.example.imitatingneteasecloud.utils.SpUtils;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -23,7 +24,12 @@ public class WelcomeActivity extends BaseActivity {
         mTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                toMainActivity();
+                boolean result = SpUtils.isLogin(WelcomeActivity.this);
+                if(result){
+                    toMainActivity();
+                }else{
+                    toLoginActivity();
+                }
             }
         },3000);
     }

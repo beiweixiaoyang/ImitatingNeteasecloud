@@ -22,4 +22,16 @@
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+<!--    定义activity的切换动画-->
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+<!--    启动新的activity，新的activity的进入动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+<!--        启动新的activity，原activity退出动画-->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+<!--        退出activity，当前activity的退出动画-->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+<!--        退出activity，上一个activity进入的动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+    </style>
 </resources>

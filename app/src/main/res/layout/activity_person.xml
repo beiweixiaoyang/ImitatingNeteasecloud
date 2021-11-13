@@ -9,6 +9,7 @@
 
     <include layout="@layout/nav_bar"/>
     <TextView
+        android:id="@+id/userName"
         android:textSize="@dimen/small_text_Size"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"

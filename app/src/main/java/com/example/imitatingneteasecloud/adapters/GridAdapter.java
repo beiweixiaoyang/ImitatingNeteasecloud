@@ -10,9 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.imitatingneteasecloud.R;
 import com.example.imitatingneteasecloud.activitys.AlbumListActivity;
+import com.example.imitatingneteasecloud.models.AlbumModel;
 import com.example.imitatingneteasecloud.views.MyImageView;
+
+import java.util.List;
 
 /**
  * 自定义Adapter继承自RecyclerView.Adapter
@@ -20,9 +24,11 @@ import com.example.imitatingneteasecloud.views.MyImageView;
 public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     private Context mContext;
+    private List<AlbumModel> albumModels;
 
-    public GridAdapter(Context mContext) {
+    public GridAdapter(Context mContext,List<AlbumModel> list) {
         this.mContext = mContext;
+        this.albumModels=list;
     }
 
     @NonNull
@@ -34,17 +40,25 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        AlbumModel albumModel=albumModels.get(position);
+        //通过AlbumModel中的数据设置封面资源
+        Glide.with(mContext)
+                .load(albumModel.getPoster())
+                .into(holder.iv_icon);
+        holder.tv_name.setText(albumModel.getName());
+        holder.tv_playNum.setText(albumModel.getPlayNum());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mContext.startActivity(new Intent(mContext, AlbumListActivity.class));
+                mContext.startActivity(new Intent(mContext, AlbumListActivity.class)
+                .putExtra(AlbumListActivity.ALBUM_ID,albumModel.getAlbumId()));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return 6;
+        return albumModels.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
