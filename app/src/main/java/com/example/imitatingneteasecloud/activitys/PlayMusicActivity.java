@@ -78,5 +78,6 @@ public class PlayMusicActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
         realmUtils.close();
+        playMusicView.destroy();
     }
 }
